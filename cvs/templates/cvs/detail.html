@@ -1,0 +1,11 @@
+<a href="../">Inicio</a>
+<a href="{url 'index' %}">Index</a>
+
+
+<h1>{{ persona.nombre }} {{ persona.apellidos }}</h1>
+
+<ul>
+    {% for e in persona.experiencia_set.all %}
+        <li>{{ e.puesto }}</li>
+    {% endfor %}
+    </ul>
